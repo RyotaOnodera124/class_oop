@@ -1,0 +1,28 @@
+class MyCounterV2:
+    def __init__(self, value=0, step=1):
+        self.value = value
+        self.step = step
+
+    def count_up(self):
+        self.value += self.step
+
+
+# 初期値0でステップ1のカウンターを作成
+counter1 = MyCounterV2(value=0, step=1)
+print(counter1.value)  # 0
+
+counter1.count_up()
+print(counter1.value)  # 1
+
+counter1.count_up()
+print(counter1.value)  # 2
+
+# 初期値0でステップ3のカウンターを作成
+counter2 = MyCounterV2(value=0, step=3)
+print(counter2.value)  # 0
+
+counter2.count_up()
+print(counter2.value)  # 3
+
+counter2.count_up()
+print(counter2.value)  # 6
